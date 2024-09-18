@@ -1,3 +1,21 @@
-# Enter Code here
-# Read the README - under files on left
-# Delete these three lines before submitting
+seconds_births = float(input("How many seconds between births? "))
+print("")
+seconds_deaths = float(input("How many seconds between deaths? "))
+print("")
+seconds_immigration = float(input("How many seconds between immigration? "))
+print("")
+current_population = float(input("What is the current population? "))
+print("")
+years_future = int(input("How many years in the future? "))
+print("")
+population_change = int((1/seconds_births - 1/seconds_deaths + 1/seconds_immigration)*3156000)
+print("")
+future_population = int(population_change + current_population)
+print("")
+print(f"The predicted population change over {years_future} years is" , population_change)
+print("The predicted population is " , future_population)
+if population_change > 0:
+    print("the population will increase")
+else:
+    print("the population will decrease")
+
