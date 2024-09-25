@@ -26,6 +26,7 @@ print("")
 print(f"The predicted population change over {years_future} years is" , population_change)
 #Output the predicted population
 print("The predicted population is " , future_population)
+#Output if the population will increase or decrease
 if population_change > current_population:
     print("the population will increase")
 else:
